@@ -8,16 +8,16 @@ spring:
   application:
     name: usian-item-web
   rabbitmq:
-    host: 192.168.157.132
-    port: 5672
-      username: admin
-      password: 1111
-      virtual-host: /
-      listener:
-       direct:
-         acknowledge-mode: manual
-       simple:
-         acknowledge-mode: manual
+  host: 192.168.157.132
+  port: 5672
+  username: admin
+  password: 1111
+  virtual-host: /
+  listener:
+    direct:
+      acknowledge-mode: manual
+    simple:
+      acknowledge-mode: manual
 fdfs:
   so-timeout: 1501 # 超时时间
   connect-timeout: 601 # 连接超时时间
